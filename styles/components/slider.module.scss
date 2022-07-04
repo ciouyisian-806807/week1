@@ -1,0 +1,56 @@
+.CSlider {
+  &__table {
+    display: inline-grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-items: center;
+    align-items: start;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  &__card {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      opacity: 0.5;
+    }
+    &_img {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      img {
+        width: 90%;
+        height: 90%;
+      }
+    }
+    &_title {
+      padding: 0 0.5rem;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    &_price {
+      padding: 0 0.5rem;
+      color: red;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+  }
+  &__pagination {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 0rem;
+    color: red;
+    font-size: 1.25rem;
+    &_arrow {
+      cursor: pointer;
+      margin: auto 0.25rem;
+      color: #464646;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}

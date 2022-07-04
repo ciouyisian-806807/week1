@@ -1,0 +1,95 @@
+.CThemeBlock {
+  position: relative;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow: hidden;
+  margin: 1.5rem auto;
+  width: 100%;
+  height: 720px;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0 rgba(43, 43, 43, 0.1);
+  &:before {
+    content: "主題推薦";
+    position: absolute;
+    display: inline-block;
+    top: 1.5rem;
+    left: 0;
+    width: 80px;
+    padding: 0.5rem;
+    background: #008fe9;
+    color: #ffffff;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  }
+  &__title {
+    position: absolute;
+    top: 2.5rem;
+    left: 1.5rem;
+    color: #ffffff;
+    width: 35%;
+  }
+  &__info {
+    display: inline-flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    justify-content: space-between;
+    align-items: stretch;
+    &_title {
+      white-space: nowrap;
+    }
+  }
+  &__keywordList {
+    display: inline-flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-basis: 50%;
+    padding: 1rem;
+    background: #1600ff;
+    color: #ffffff;
+    &_item {
+      cursor: pointer;
+      display: inline-block;
+      margin: 0.25rem 0;
+      padding: 0.5rem 1rem;
+      background: rgba(0, 0, 0, 0.3);
+      font-size: 0.85rem;
+      white-space: nowrap;
+      border-radius: 1.75rem;
+      transition: opacity 0.25s ease-in-out;
+      &:hover {
+        background: rgba(0, 0, 0, 0.7);
+      }
+    }
+  }
+
+  &__banner {
+    position: relative;
+    // min-width: 700px;
+    max-height: 720px;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0px;
+      height: 0px;
+      border-top: 0px solid transparent;
+      border-bottom: 55px solid transparent;
+      border-left: 55px solid #1600ff;
+      transform: rotate(0deg);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__content {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 50%;
+  }
+}
