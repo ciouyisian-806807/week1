@@ -1,7 +1,7 @@
 import React from "react";
 import Info from './Info';
 import Content from './ThemeContent';
-import { themeBlockStyle } from '../../styles/index';
+import { themeBlockStyle } from '../../styles';
 
 const fakeKeywordData = {
   title:'3C電競年終戰',
@@ -15,7 +15,7 @@ const fakeKeywordData = {
   ]
 };
 const fakeContentData = [
-  {seq:"1",title:'我是商品1',price: 999,src:'https://picsum.photos/id/1033/200/200'},
+  {seq:"1",title:'我是商品1我是商品1我是商品1我是商品1我是商品1',price: 999,src:'https://picsum.photos/id/1033/200/200'},
   {seq:"2",title:'我是商品2',price: 959,src:'https://picsum.photos/id/119/200/200'},
   {seq:"3",title:'我是商品3',price: 979,src:'https://picsum.photos/id/829/200/200'},
   {seq:"4",title:'我是商品4',price: 969,src:'https://picsum.photos/id/835/200/200'},

@@ -17,6 +17,7 @@ const Info: React.FC<IInfoProps> = ({ data }) => {
   const { title, banner, keywordList } = data;
   return (
     <div className={themeBlockStyle.CThemeBlock__info}>
+      <div className={themeBlockStyle.CThemeBlock__tag}>主題推薦</div>
       <h1 className={themeBlockStyle.CThemeBlock__title}>{title}</h1>
       <div className={themeBlockStyle.CThemeBlock__keywordList}>
         {keywordList &&

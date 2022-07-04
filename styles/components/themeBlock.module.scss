@@ -10,21 +10,46 @@
   background: #ffffff;
   border-radius: 0.5rem;
   box-shadow: 0 0.25rem 0 rgba(43, 43, 43, 0.1);
-  &:before {
-    content: "主題推薦";
+  &__tag {
     position: absolute;
-    display: inline-block;
-    top: 1.5rem;
+    top: 1rem;
     left: 0;
-    width: 80px;
-    padding: 0.5rem;
-    background: #008fe9;
+    padding: 0.75rem 0.5rem;
+    min-height: 2rem;
+    background: #0090eb;
     color: #ffffff;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    font-style: italic;
+    text-shadow: 0 2px 1px #2b2b2b;
+    border-bottom: 4px solid #d5d5d5;
+    box-shadow: 2px 4px 0 rgb(43 43 43 / 10%);
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -8px;
+      width: 14px;
+      height: 100%;
+      background: #0090eb;
+      border-radius: 0 2px 3px 0;
+      // box-shadow: 2px 4px 0 rgb(43 43 43 / 10%);
+      -webkit-transform: skew(-13deg);
+      transform: skew(-13deg);
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      right: -7px;
+      height: 80%;
+      border: 4px solid #d5d5d5;
+      border-radius: 0 2px 3px 0;
+      box-shadow: 2px 4px 0 rgb(43 43 43 / 10%);
+      transform: skew(345deg);
+    }
   }
   &__title {
     position: absolute;
-    top: 2.5rem;
+    top: 6rem;
     left: 1.5rem;
     color: #ffffff;
     width: 35%;
@@ -35,6 +60,7 @@
     flex-basis: 50%;
     justify-content: space-between;
     align-items: stretch;
+    background: #1600ff;
     &_title {
       white-space: nowrap;
     }
@@ -46,7 +72,6 @@
     justify-content: flex-end;
     flex-basis: 50%;
     padding: 1rem;
-    background: #1600ff;
     color: #ffffff;
     &_item {
       cursor: pointer;
@@ -66,20 +91,9 @@
 
   &__banner {
     position: relative;
-    // min-width: 700px;
     max-height: 720px;
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 0px;
-      height: 0px;
-      border-top: 0px solid transparent;
-      border-bottom: 55px solid transparent;
-      border-left: 55px solid #1600ff;
-      transform: rotate(0deg);
-    }
+    overflow: hidden;
+    border-radius: 100px 0 0;
     img {
       width: 100%;
       height: 100%;
