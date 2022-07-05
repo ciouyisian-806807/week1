@@ -10,9 +10,12 @@
   }
   &__card {
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.25s ease-in-out;
     &:hover {
-      opacity: 0.5;
+      color: #0090eb;
+      img {
+        opacity: 0.8;
+      }
     }
     &_img {
       display: inline-flex;
@@ -28,16 +31,19 @@
     &_title {
       display: -webkit-box;
       width: 100%;
+      height: 3rem;
       padding: 0 0.5rem;
+      margin: 0 0 0.5rem 0;
       overflow: hidden;
+      font-weight: 700;
       text-overflow: ellipsis;
-      /* white-space: nowrap; */
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
     }
     &_price {
       padding: 0 0.5rem;
       color: red;
+      font-size: 1.25rem;
       font-weight: 800;
       font-style: italic;
       white-space: nowrap;
