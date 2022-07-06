@@ -14,13 +14,6 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
-  resolve: {
-    alias: {
-      // '@compoments': path.resolve(__dirname, 'assets/src/javascript/compoments'),
-      // '@template': path.resolve(__dirname, 'assets/src/javascript/template'),
-      // '@scss': path.resolve(__dirname, 'assets/src/scss'),
-    },
-  },
 };
 
 module.exports = nextConfig;

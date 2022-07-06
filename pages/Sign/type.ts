@@ -5,5 +5,5 @@ export interface IPostQuery {
   body: string;
 }
 export interface ISSRPostProps {
-  post: IPostQuery;
+  post: IPostQuery[];
 }

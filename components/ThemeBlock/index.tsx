@@ -1,7 +1,7 @@
 import React from "react";
 import Info from './Info';
 import Content from './ThemeContent';
-import { themeBlockStyle } from '../../styles';
+import { themeBlockStyle } from '@styles/index';
 
 const fakeKeywordData = {
   title:'3C電競年終戰',

@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import Link from 'next/link';
-import ThemeBlock from "../components/ThemeBlock";
-// import style from '../styles/Home.module.scss';
+import ThemeBlock from "@components/ThemeBlock";
 
 const Home: NextPage = () => {
   return (
